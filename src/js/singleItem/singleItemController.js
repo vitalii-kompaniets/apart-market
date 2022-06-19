@@ -50,4 +50,9 @@ export default async function (state) {
         })
       }
     });
+
+    // Клик по кнопки добавить в избранное 
+    document.querySelector('#addToFavouriteBtn').addEventListener('click', ()=>{
+      state.favourites.toggleFav(state.singleItem.id)
+    })
 }

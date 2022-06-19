@@ -4,13 +4,15 @@ import bidsPage from './pages/bidsPage'
 import favouritesPage from './pages/favouritesPage'
 import errorPage from './pages/errorPage'
 import EventEmitter from './utils/eventEmitter'
+import Favourites from './favourites/favouritesModel'
 
 const state = {
    results: [],
-   emitter: new EventEmitter()
+   emitter: new EventEmitter(),
+   favourites: new Favourites()
 }
 
-// Только для тестирования. После - удалить
+// Только для тестирования. После - удалить!!!
 window.state = state
 
 // Routs
